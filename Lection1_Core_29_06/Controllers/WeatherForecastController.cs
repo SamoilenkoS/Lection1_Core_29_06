@@ -54,5 +54,11 @@ namespace Lection1_Core_29_06.Controllers
         {
             return WeatherForecasts;
         }
+
+        [HttpGet("{id}")]
+        public WeatherForecast GetById(int id)
+        {
+            return WeatherForecasts.First();
+        }
     }
 }
